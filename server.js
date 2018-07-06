@@ -63,6 +63,14 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  //res.send('About Page');
+  res.render('project.hbs',{
+    pageTitle:'Portfolio Page',
+    welcomeMessage:'Welcome to My First Node.js Project'
+  });
+});
+
 // /bad-Send back json with errorMessage
 app.get('/bad',(req, res)=>{
   //res.send('<h1>Hello Express!</h1>');
